@@ -1,7 +1,0 @@
- N'oubliez pas de mettre à jour sqlachemy avec la commande pip install --upgrade sqlalchemy
- et change the line 46 from  the file lib\site-packages\chatterbot\storage\sql_storage.py in your user folder to :
- from 
- if not self.engine.dialect.has_table(self.engine, 'Statement'):
- to 
- if not sqlalchemy.inspect(self.engine).has_table('Statement'):
- and import the sqlalchemy module
