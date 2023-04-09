@@ -20,14 +20,11 @@ chatbot = ChatBot("Chatbot tounsi",logic_adapters=[
  #       {'import_path': 'myadapter.MyLogicAdapter',},
         ])
 
-#CORPUS_FILE="chat.txt"
 CORPUS_FILE2="chat2.txt"
 CORPUS_FILE3="chat3.txt"
 trainer = ListTrainer(chatbot)
-#cleaned_corpus=clean_corpus(CORPUS_FILE)
 cleaned_corpus2=clean_corpus(CORPUS_FILE2)
 cleaned_corpus3=clean_corpus(CORPUS_FILE3)
-#trainer.train(cleaned_corpus)
 trainer.train(cleaned_corpus2)
 trainer.train(cleaned_corpus3)
 
