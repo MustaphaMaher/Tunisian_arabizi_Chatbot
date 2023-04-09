@@ -8,7 +8,6 @@ def get_weather(location="Tunis"):
     data = response.json()
     #print(data)
     # Extraction des info comme temperature et humidité
-    #description = data['weather'][0]['description']
     temperature = round(data['main']['temp'] - 273.15, 1)  
     humidity = data['main']['humidity']
     #message
