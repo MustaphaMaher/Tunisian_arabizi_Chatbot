@@ -3,7 +3,7 @@ import requests
 # Define the weather API function
 def get_weather(location="Tunis"):
     
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid=92f54ec043c006fd6e476a85676c76ac"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid=$WEATHER_API_KEY"
     response = requests.get(url)
     data = response.json()
     #print(data)
