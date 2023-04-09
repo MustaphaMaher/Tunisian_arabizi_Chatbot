@@ -10,7 +10,7 @@ from newsapi import NewsApiClient
 
 
 
-newsapi = NewsApiClient(api_key='a1d8789da28b4df282afbabff793c211')
+newsapi = NewsApiClient(api_key="$NEWS_API_KEY")
 
 #adding mathematical adapters for math operations to the achatbot
 chatbot = ChatBot("Chatbot tounsi",logic_adapters=[   
