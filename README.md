@@ -15,9 +15,12 @@ in my case i use python 3.9.12 and when installing chatterbot you might find you
 In order to fix it you have to use the command : ```pip install --upgrade sqlalchemy```
 et change the line 46 from  the file user\anaconda3(in my case)\lib\site-packages\chatterbot\storage\sql_storage.py in your user folder
 from 
-
+```
 if not self.engine.dialect.has_table(self.engine, 'Statement'):
- to 
+```
+ to
+```
 if not sqlalchemy.inspect(self.engine).has_table('Statement'):
- 
- and import the sqlalchemy module in sql_storage.py
+```
+and import the sqlalchemy module in sql_storage.py
+bu adding this line `import sqlalchemy`
